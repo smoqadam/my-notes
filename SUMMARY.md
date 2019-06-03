@@ -1,9 +1,8 @@
 # Table of contents
 
 * [Knowledge](README.md)
-* [Untitled](untitled.md)
 
-## Shortcuts
+## Books
 
-* [Visual Studio](shortcuts/visual-studio.md)
+* [The Pragmatic Programmer](books/the-pragmatic-programmer.md)
 

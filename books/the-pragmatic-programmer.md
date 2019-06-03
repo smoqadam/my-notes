@@ -8,9 +8,9 @@
 
 **Tip 3:** **Provide Options, Don't Make Lame** [**Excuses**](http://programmingexcuses.com/)**:** 
 
-#### **Don't blame someone or something else, or make up an excuse.**
+* Don't blame someone or something else, or make up an excuse.
 
-Instead of excuses, provide options.
+* Instead of excuses, provide options.
 
 
 

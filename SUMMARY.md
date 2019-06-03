@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Knowledge](README.md)
+* [Table of contents](README.md)
 
 ## Books
 

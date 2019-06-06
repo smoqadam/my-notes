@@ -26,7 +26,9 @@
 
 **Tip 7 Make Quality a Requirements Issue**
 
-**Tip 8 Invest Regularly in Your Knowledge Portfolio** An investment in knowledge always pays the best interest. • Benjamin Franklin
+**Tip 8 Invest Regularly in Your Knowledge Portfolio** 
+
+An investment in knowledge always pays the best interest. • Benjamin Franklin
 
 **Building Your Portfolio**
 
@@ -34,7 +36,7 @@
 * **Diversify.** The more different things you know, the more valuable you are.
 * **Manage risk.** Don't put all your technical eggs in one basket.
 * **Buy low, sell high.** Learning an emerging technology before it becomes popular can be just as hard as finding an undervalued stock, but the payoff can be just  as rewarding. 
-* Review and rebalance.
+* Review and re-balance.
 * Learn at least one new language every year.
 * Read a technical book each quarter.
 

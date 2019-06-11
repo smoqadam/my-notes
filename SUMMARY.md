@@ -7,3 +7,7 @@
 
 * [The Pragmatic Programmer](books/the-pragmatic-programmer.md)
 
+## Programming
+
+* [Git](programming/git.md)
+

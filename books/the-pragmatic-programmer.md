@@ -47,3 +47,32 @@ An investment in knowledge always pays the best interest. • Benjamin Franklin
 
 ### Chapter 2
 
+**Tip 11 DRY—Don't Repeat Yourself**
+
+_How Does Duplication Arise?_
+
+* **Imposed duplication.** Developers feel they have no choice—the environment seems to require duplication.
+* **Inadvertent duplication.** Developers don't realize that they are duplicating information.
+* **Impatient duplication.** Developers get lazy and duplicate because it seems easier.
+* **Interdeveloper duplication.** Multiple people on a team \(or on different teams\) duplicate a piece of information.
+
+_**The DRY** principle tells us to keep the low-level knowledge in the code, where it belongs, and reserve the comments for other, high-level explanations. Otherwise, we're duplicating knowledge, and every change means changing both the code and the comments._
+
+**Tip 12 Make It Easy to Reuse**
+
+**Tip 14 There Are No Final Decisions**
+
+#### Estimation
+
+If you say that something will take about 130 working days, then people will be expecting it to come in pretty close. However, if you say "Oh, about six months," then they know to look for it any time between five and seven months from now.
+
+* **1 - 15 days**    =&gt; days
+* **3 - 8 weeks**   =&gt; weeks
+* **8 - 30 weeks** =&gt; months
+* **30+ weeks**    =&gt; think hard before giving an estimate
+
+  
+
+
+
+

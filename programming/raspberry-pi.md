@@ -27,3 +27,9 @@ nmap -sP 192.168.0.0/24
 
 **Default ssh password**:`raspberry`
 
+**Open a GUI app \(VLC\) via ssh**
+
+```text
+export DISPLAY=:0 && vlc
+```
+

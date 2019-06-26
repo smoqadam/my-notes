@@ -34,5 +34,20 @@ When shooting storytelling compositions in which you want as much front-to-back 
 
 ![Front-to-back focus with the storytelling composition technique](../.gitbook/assets/image%20%282%29.png)
 
+### Chapter 3: Filling the frame
+
+* Once you think you have filled the frame with that flower or portrait of your friend, spouse, lover, neighbor, or stranger, ask yourself the following questions: Are the flower petals touching the edges of the frame inside your camera’s viewfinder? Is the person’s forehead cut off a bit at the top of your frame? If the answer to either question is “Nope!” then you are not yet close enough—so get closer!
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+### Chapter 4: Choosing your background
+
+* When you are watching the final episode of your favorite television show, all your attention is on the TV—at least until crying is heard from the baby’s room in the “background.” Many times—and, oh my, do I mean _many_ times—I have seen potentially great compositions get compromised by that “baby crying in the background,” which, of course, distracts the viewer from focusing on the main subject.
+* _**Do not shoot any composition where babies are crying in the background.**_
+
+![](../.gitbook/assets/image%20%286%29.png)
+
+![](../.gitbook/assets/image%20%285%29.png)
+
 
 

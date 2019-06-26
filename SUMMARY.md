@@ -6,6 +6,7 @@
 ## Books
 
 * [The Pragmatic Programmer](books/the-pragmatic-programmer.md)
+* [Understanding Composition Field Guide](books/understanding-composition-field-guide.md)
 
 ## Programming
 

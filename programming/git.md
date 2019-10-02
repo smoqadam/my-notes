@@ -12,5 +12,13 @@ stash@{2}: ...`
 
 `git stash show stash@{1}:<filename> > <newfilename>`
 
-\`\`
+#### Save modified files as a zip file
+
+```text
+cp $(git ls-files --modified) ../modified-files
+```
+
+```text
+zip modified-files.zip $(git ls-files --modified)
+```
 

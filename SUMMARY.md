@@ -12,4 +12,5 @@
 
 * [Git](programming/git.md)
 * [Raspberry Pi](programming/raspberry-pi.md)
+* [Firefox](programming/firefox.md)
 

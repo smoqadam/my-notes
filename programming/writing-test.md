@@ -34,43 +34,43 @@ Use mostly as a parameter and all the methods return null
 
   
 **Example**:  
-`function getReadyToGo(Engine $engine, Lights $lights) {  
-     $engine->start();  
-     $electronics->turnOn($lights);  
-     return true;  
-}`  
-  
-**Test**:  
-`$engine = new Engine();  
-    $dummyLights = $this->getMock('Lights');  
-    $this->assertTrue($carController->getReadyToGo($engine, $dummyLights));`  
-  
 
+
+```php
+function getReadyToGo(Engine $engine, Lights $lights) {
+     $engine->start();
+     $electronics->turnOn($lights);
+     return true;
+}
+```
 
 #### **Stub object**
 
 When an object needs another object for some information we use  
 Stub object. Which means we need a fake object to meat the SUT requirements.
 
-**Example**:  
-`function goForward(Electronics $electronics, StatusPanel) {           if($statusPanel->engineIsRunning() &&  $statusPanel->thereIsEnoughFuel()) {   
-        $electronics->accelerate ();   
-   }   
-}`
+**Example**:
+
+```php
+function goForward(Electronics $electronics, StatusPanel) {           
+    if($statusPanel->engineIsRunning() &&  $statusPanel->thereIsEnoughFuel()) { 
+        $electronics->accelerate (); 
+    } 
+}
+```
 
 **Test Case**:
 
-`$carController = new CarController();  
-$electronics = new Electronics();  
-$stubStatusPanel = $this->getMock('StatusPanel');  
-$stubStatusPanel->expects($this->any())  
-     ->method('thereIsEnoughFuel')->will($this->returnValue(TRUE));  
-$stubStatusPanel->expects($this->any())->method('engineIsRunning')  
-                        ->will($this->returnValue(TRUE));  
-$carController->goForward($electronics, $stubStatusPanel);`  
+```php
+$carController = new CarController();
+$electronics = new Electronics();
+$stubStatusPanel = $this->getMock('StatusPanel');
+$stubStatusPanel->expects($this->any())->method('thereIsEnoughFuel')->will($this->returnValue(TRUE));
+$stubStatusPanel->expects($this->any())->method('engineIsRunning')->will($this->returnValue(TRUE));
+$carController->goForward($electronics, $stubStatusPanel);
+```
 
-
-1. 1.  Spy Object: TODO 
+####  Spy Object: TODO 
 
 
 

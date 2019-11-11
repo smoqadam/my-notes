@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Articles](articles.md)
 
 ## Books
 
@@ -9,10 +8,11 @@
 
 ## Programming
 
+* [OOP](programming/oop.md)
+* [PHP](programming/php.md)
 * [Writing Test](programming/writing-test.md)
 * [Git](programming/git.md)
-* [Raspberry Pi](programming/raspberry-pi.md)
-* [Firefox](programming/firefox.md)
 * [Algorithms](programming/algorithms.md)
-* [Untitled](untitled.md)
+* [Firefox](programming/firefox.md)
+* [Raspberry Pi](programming/raspberry-pi.md)
 

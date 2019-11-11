@@ -12,7 +12,7 @@ In object-oriented programming, polymorphism refers to a programming language's 
 
 * **Single-responsibility Principle:** A class should have one and only one reason to change, meaning that a class should have only one job.
 * **Open-closed Principle:** Objects or entities should be open for extension, but closed for modification.
-* **Liskov substitution principle:** The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your superclass. [Read More](https://stackify.com/solid-design-liskov-substitution-principle/)
+* **Liskov substitution principle:** The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your super-class. [Read More](https://stackify.com/solid-design-liskov-substitution-principle/)
 * **Interface segregation principle:**
 * **Dependency Inversion principle:**
 
@@ -22,15 +22,15 @@ In object-oriented programming, polymorphism refers to a programming language's 
 
 #### What is Inversion of Control \(IoC\)?
 
-Means, instead of creat a new object inside another class, pass it to the constructor. for example:
+Means, instead of create a new object inside another class, pass it to the constructor. for example:
 
 ```text
-public class TextEditor {
+class TextEditor {
 
-    private SpellChecker checker;
+    private SpellChecker $checker;
 
     public TextEditor() {
-        this.checker = new SpellChecker();
+        $this.checker = new SpellChecker();
     }
 }
 ```
@@ -38,19 +38,19 @@ public class TextEditor {
 it's better to change it to this:
 
 ```text
-public class TextEditor {
+class TextEditor {
 
-    private IocSpellChecker checker;
+    private IocSpellChecker $checker;
 
-    public TextEditor(IocSpellChecker checker) {
-        this.checker = checker;
+    public TextEditor(IocSpellChecker $checker) {
+        $this.checker = $checker;
     }
 }
 SpellChecker sc = new SpellChecker; // dependency
 TextEditor textEditor = new TextEditor(sc);
 ```
 
-Now, the TextEditor class is not dependent on only one SpekkChecker class and the user can use another implimentation of spellckecer for the TextEditor.
+Now, the `TextEditor` class is not dependent on only one `SpellChecker` class and the user can use another implementation of `SpellChecker` for the `TextEditor`.
 
 
 
@@ -61,6 +61,8 @@ Now, the TextEditor class is not dependent on only one SpekkChecker class and th
 {% embed url="https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design\#toc-single-responsibility-principle" %}
 
 {% embed url="https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle" %}
+
+{% embed url="https://stackoverflow.com/questions/757743/what-is-the-difference-between-builder-design-pattern-and-factory-design-pattern" %}
 
 
 

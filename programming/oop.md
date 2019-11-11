@@ -20,6 +20,38 @@ In object-oriented programming, polymorphism refers to a programming language's 
 
  Because we can handle the user input by setters and the output by getters. Maybe in the future we need to change the value of the variable before returning it to the user, it would be a nightmare maintenance if we used the property directly all over the code, but with a getter we could do it only in one place.
 
+#### What is Inversion of Control \(IoC\)?
+
+Means, instead of creat a new object inside another class, pass it to the constructor. for example:
+
+```text
+public class TextEditor {
+
+    private SpellChecker checker;
+
+    public TextEditor() {
+        this.checker = new SpellChecker();
+    }
+}
+```
+
+it's better to change it to this:
+
+```text
+public class TextEditor {
+
+    private IocSpellChecker checker;
+
+    public TextEditor(IocSpellChecker checker) {
+        this.checker = checker;
+    }
+}
+SpellChecker sc = new SpellChecker; // dependency
+TextEditor textEditor = new TextEditor(sc);
+```
+
+Now, the TextEditor class is not dependent on only one SpekkChecker class and the user can use another implimentation of spellckecer for the TextEditor.
+
 
 
 
@@ -27,6 +59,8 @@ In object-oriented programming, polymorphism refers to a programming language's 
 ## References
 
 {% embed url="https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design\#toc-single-responsibility-principle" %}
+
+{% embed url="https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle" %}
 
 
 

@@ -32,3 +32,45 @@ Without this, php try to convert the values between types if possible, for examp
 
 getting some information about a class, method or function. For example Doctrine use reflection to access entities DocBlock properties.
 
+
+
+#### Late Static Binding \(return static::foo\(\)\)
+
+Basically, it boils down to the fact that the `self` keyword does not follow the same rules of inheritance. `self` always resolves to the class in which it is used. This means that if you make a method in a parent class and call it from a child class, `self` will not reference the child as you might expect.
+
+```php
+class alpha {
+
+    function classname(){
+        return __CLASS__;
+    }
+
+    function selfname(){
+        return self::classname();
+    }
+
+    function staticname(){
+        return static::classname();
+    }
+}
+
+class beta extends alpha {
+
+    function classname(){
+        return __CLASS__;
+    }
+}
+
+$beta = new beta();
+echo $beta->selfname(); // Output: alpha
+echo $beta->staticname(); // Output: beta
+```
+
+#### 
+
+#### References
+
+{% embed url="https://www.php.net/manual/en/language.oop5.late-static-bindings.php" %}
+
+
+

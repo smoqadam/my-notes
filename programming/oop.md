@@ -24,7 +24,7 @@ In object-oriented programming, polymorphism refers to a programming language's 
 
 Means, instead of create a new object inside another class, pass it to the constructor. for example:
 
-```text
+```php
 class TextEditor {
 
     private SpellChecker $checker;
@@ -37,7 +37,7 @@ class TextEditor {
 
 it's better to change it to this:
 
-```text
+```php
 class TextEditor {
 
     private IocSpellChecker $checker;
@@ -51,6 +51,47 @@ TextEditor textEditor = new TextEditor(sc);
 ```
 
 Now, the `TextEditor` class is not dependent on only one `SpellChecker` class and the user can use another implementation of `SpellChecker` for the `TextEditor`.
+
+### Design Patterns
+
+#### Singleton: Only one instance of a class during the run-time
+
+```php
+    private static $instance;
+
+    public static function getInstance() {
+        if (!(self::$instance instanceof self)) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+```
+
+**Use cases:** Logger, Config reader
+
+#### Factory Pattern: 
+
+1.  **Simple Factory Pattern.** This allows interfaces for creating objects without exposing the object creation logic to the client.
+2.  **Factory Method Pattern.** This allows interfaces for creating objects, but allow sub-classes to determine which class to instantiate.
+3.  **Abstract Factory Pattern.** Unlike the above two patterns, an abstract factory is an interface to create of related objects without specifying/exposing their classes. We can also say that it provides an object of another factory that is responsible for creating required objects.
+
+**Use case:** Database factory, by changing the data-source, for example from SQLite to Mysql it will a Mysql class.
+
+#### Builder Pattern
+
+Lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+
+Use Case: PHPUnit `createMock` method using Builder design pattern to create a mock object.
+
+
+
+Fecade Pattern
+
+Provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+Use Case: Used heavily in Laravel 
+
+
 
 
 

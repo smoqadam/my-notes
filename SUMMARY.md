@@ -8,8 +8,10 @@
 
 ## Programming
 
+* [HTTP](programming/http.md)
 * [OOP](programming/oop.md)
 * [PHP](programming/php.md)
+* [MySql](programming/mysql.md)
 * [Writing Test](programming/writing-test.md)
 * [Git](programming/git.md)
 * [Algorithms](programming/algorithms.md)

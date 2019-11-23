@@ -66,6 +66,26 @@ echo $beta->selfname(); // Output: alpha
 echo $beta->staticname(); // Output: beta
 ```
 
+#### Closure vs Lambda
+
+Lambda function is using `use` keyword to access the resources outside of the function, but Closure doesn't use it.
+
+
+
+### Generators
+
+The `yeild` keyword when we have a big data and we want to iterate throgh it, if we use `yield` only the that we need will be loaded into the memory
+
+### Spaceship operator\(PHP 7\)
+
+* Return 0 if values on either side are equal
+* Return 1 if value on the left is greater
+* Return -1 if the value on the right is greater 
+
+```php
+$result = 1 <=> 2;
+```
+
 #### 
 
 #### References

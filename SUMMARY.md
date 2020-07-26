@@ -17,5 +17,9 @@
 * [Algorithms](programming/algorithms.md)
 * [Firefox](programming/firefox.md)
 * [Raspberry Pi](programming/raspberry-pi.md)
+
+---
+
 * [Linux](linux.md)
+* [Docker](docker.md)
 

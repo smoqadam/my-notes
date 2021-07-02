@@ -13,7 +13,7 @@ In object-oriented programming, polymorphism refers to a programming language's 
 * **Single-responsibility Principle:** A class should have one and only one reason to change, meaning that a class should have only one job.
 * **Open-closed Principle:** Objects or entities should be open for extension, but closed for modification.
 * **Liskov substitution principle:** The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your super-class. [Read More](https://stackify.com/solid-design-liskov-substitution-principle/)
-* **Interface segregation principle:**
+* **Interface segregation principle:** The Interface Segregation Principle states that clients should not be forced to implement interfaces they don't use. Instead of one fat interface many small interfaces are preferred based on groups of methods, each one serving one submodule.
 * **Dependency Inversion principle:**
 
 #### Why Getters and Setters are good?
